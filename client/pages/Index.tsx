@@ -7,12 +7,8 @@ export default function Index() {
   useRevealOnScroll();
   return (
     <section aria-label="Hero" className="relative min-h-[calc(100dvh-64px)] flex items-center">
-      {/* Background media layer */}
-      <div
-        className="absolute inset-0 -z-10 bg-[url('https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"
-        role="img"
-        aria-label="Dark cinematic abstract background"
-      />
+      {/* Background mesh gradient */}
+      <div className="absolute inset-0 -z-10 mesh-bg" aria-hidden />
 
       {/* Particles overlay */}
       <Particles density={60} />
