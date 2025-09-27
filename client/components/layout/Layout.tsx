@@ -33,13 +33,13 @@ function Header() {
           <NavLink to="/portfolio" className={({ isActive }) => cn(linkBase, isActive && "text-white")}>Portfolio</NavLink>
           <NavLink to="/contact" className={({ isActive }) => cn(linkBase, isActive && "text-white")}>Contact</NavLink>
         </nav>
-        <a
-          href="#contact"
+        <Link
+          to="/contact#contact"
           className="btn-neon hidden md:inline-flex"
           aria-label="Skip to contact section"
         >
           <span className="inner">Hire Me</span>
-        </a>
+        </Link>
       </div>
     </header>
   );
