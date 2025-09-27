@@ -15,7 +15,7 @@ export default function Index() {
       />
 
       {/* Particles overlay */}
-      <Particles density={90} />
+      <Particles density={60} />
 
       <div className="container relative mx-auto py-20 grid md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7">
