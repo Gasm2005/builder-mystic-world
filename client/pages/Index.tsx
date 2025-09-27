@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Particles from "@/components/Particles";
 import { Typewriter } from "@/components/Typewriter";
+import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 export default function Index() {
   return (
