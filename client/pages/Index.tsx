@@ -4,6 +4,7 @@ import { Typewriter } from "@/components/Typewriter";
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 export default function Index() {
+  useRevealOnScroll();
   return (
     <section aria-label="Hero" className="relative min-h-[calc(100dvh-64px)] flex items-center">
       {/* Background media layer */}
