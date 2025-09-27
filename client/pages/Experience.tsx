@@ -2,6 +2,20 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
 const ROLES = [
   {
+    title: "Senior Project Coordinator",
+    company: "Zoopup Technologies",
+    location: "Remote",
+    duration: "2024 – Present",
+    description:
+      "Coordinating projects and connecting business professionals to the best freelancers for their needs.",
+    achievements: [
+      "Built and managed a vetted freelancer network across key functions",
+      "Matched professionals to projects, improving time-to-hire and outcomes",
+    ],
+    cover:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
     title: "Credit Card Sales",
     company: "Innovsource Ltd. (SBI)",
     location: "Gonda, UP",
