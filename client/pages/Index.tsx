@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Particles from "@/components/Particles";
 import { Typewriter } from "@/components/Typewriter";
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
@@ -9,9 +8,8 @@ export default function Index() {
     <section aria-label="Hero" className="relative min-h-[calc(100dvh-64px)] flex items-center">
       {/* Background mesh gradient */}
       <div className="absolute inset-0 -z-10 mesh-bg" aria-hidden />
+      <div className="absolute inset-0 -z-10 vignette" aria-hidden />
 
-      {/* Particles overlay */}
-      <Particles density={45} />
 
       <div className="container relative mx-auto py-20 grid md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7">
