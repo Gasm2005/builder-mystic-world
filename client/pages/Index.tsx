@@ -11,7 +11,7 @@ export default function Index() {
       <div className="absolute inset-0 -z-10 mesh-bg" aria-hidden />
 
       {/* Particles overlay */}
-      <Particles density={60} />
+      <Particles density={45} />
 
       <div className="container relative mx-auto py-20 grid md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7">
