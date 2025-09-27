@@ -70,7 +70,7 @@ export default function Particles({ density = 70 }: { density?: number }) {
     <canvas
       ref={ref}
       aria-hidden
-      className="absolute inset-0 size-full pointer-events-none opacity-40 mix-blend-screen"
+      className="absolute inset-0 size-full pointer-events-none opacity-25 mix-blend-screen"
     />
   );
 }
