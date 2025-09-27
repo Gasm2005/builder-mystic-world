@@ -26,7 +26,10 @@ export default function Particles({ density = 70 }: { density?: number }) {
     function init() {
       particles.length = 0;
       const rect = parent.getBoundingClientRect();
-      const count = Math.max(24, Math.floor((rect.width * rect.height) / (12000 / density)));
+      const count = Math.max(
+        24,
+        Math.floor((rect.width * rect.height) / (12000 / density)),
+      );
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * rect.width,

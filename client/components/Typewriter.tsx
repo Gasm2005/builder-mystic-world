@@ -24,7 +24,10 @@ export function Typewriter({
         const next = current.slice(0, text.length + 1);
         setText(next);
         if (next === current) {
-          timeoutRef.current = window.setTimeout(() => setDeleting(true), pause);
+          timeoutRef.current = window.setTimeout(
+            () => setDeleting(true),
+            pause,
+          );
           return;
         }
       } else {

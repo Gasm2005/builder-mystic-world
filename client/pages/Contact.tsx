@@ -6,11 +6,21 @@ export default function Contact() {
           <span className="neon-text">Contact</span>
         </h1>
         <p className="mt-3 text-white/70">
-          A contact form with Name, Email, Message and submit will be built next. For now, reach out via email or LinkedIn.
+          A contact form with Name, Email, Message and submit will be built
+          next. For now, reach out via email or LinkedIn.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <a href="mailto:ajay@example.com" className="btn-neon"><span className="inner">Email</span></a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/80 hover:text-white hover:border-white/30 transition-colors">LinkedIn</a>
+          <a href="mailto:ajay@example.com" className="btn-neon">
+            <span className="inner">Email</span>
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/80 hover:text-white hover:border-white/30 transition-colors"
+          >
+            LinkedIn
+          </a>
         </div>
       </header>
     </section>

@@ -92,22 +92,38 @@ export default function Experience() {
   return (
     <section className="container mx-auto py-16 lg:py-24">
       <header className="text-center max-w-2xl mx-auto mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold"><span className="neon-text">Experience</span></h1>
+        <h1 className="text-3xl sm:text-4xl font-bold">
+          <span className="neon-text">Experience</span>
+        </h1>
         <p className="mt-3 text-white/70">Selected roles and outcomes.</p>
       </header>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {ROLES.map((r) => (
-          <article key={r.title} className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_rgba(0,114,255,0.35)]">
+          <article
+            key={r.title}
+            className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_rgba(0,114,255,0.35)]"
+          >
             <figure className="h-40 w-full overflow-hidden">
-              <img src={r.cover} alt={`${r.title} at ${r.company}`} className="w-full h-full object-cover" loading="lazy" />
+              <img
+                src={r.cover}
+                alt={`${r.title} at ${r.company}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </figure>
             <div className="p-5">
-              <h3 className="text-lg font-semibold text-white">{r.title} • <span className="text-white/80">{r.company}</span></h3>
-              <div className="mt-1 text-xs text-white/60">{r.location} · {r.duration}</div>
+              <h3 className="text-lg font-semibold text-white">
+                {r.title} • <span className="text-white/80">{r.company}</span>
+              </h3>
+              <div className="mt-1 text-xs text-white/60">
+                {r.location} · {r.duration}
+              </div>
               <p className="mt-3 text-sm text-white/80">{r.description}</p>
               <ul className="mt-3 space-y-1.5 text-sm text-white/80">
-                {r.achievements.map((a) => (<li key={a}>• {a}</li>))}
+                {r.achievements.map((a) => (
+                  <li key={a}>• {a}</li>
+                ))}
               </ul>
             </div>
           </article>

@@ -5,11 +5,13 @@ import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 export default function Index() {
   useRevealOnScroll();
   return (
-    <section aria-label="Hero" className="relative min-h-[calc(100dvh-64px)] flex items-center">
+    <section
+      aria-label="Hero"
+      className="relative min-h-[calc(100dvh-64px)] flex items-center"
+    >
       {/* Background mesh gradient */}
       <div className="absolute inset-0 -z-10 mesh-bg" aria-hidden />
       <div className="absolute inset-0 -z-10 vignette" aria-hidden />
-
 
       <div className="container relative mx-auto py-20 grid md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7">
@@ -23,12 +25,20 @@ export default function Index() {
 
           <p className="mt-6 text-white/70 text-base">
             <Typewriter
-              items={["Digital Marketer", "Sales Expert", "Meta Ads Specialist"]}
+              items={[
+                "Digital Marketer",
+                "Sales Expert",
+                "Meta Ads Specialist",
+              ]}
             />
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link to="/about" className="btn-neon" aria-label="Explore my journey">
+            <Link
+              to="/about"
+              className="btn-neon"
+              aria-label="Explore my journey"
+            >
               <span className="inner">Explore My Journey</span>
             </Link>
             <Link
@@ -43,13 +53,17 @@ export default function Index() {
         {/* Highlight card */}
         <div className="md:col-span-5">
           <div className="relative rounded-2xl p-6 border border-white/10 bg-white/5 backdrop-blur reveal">
-            <div className="absolute -inset-px rounded-2xl neon-ring" aria-hidden />
+            <div
+              className="absolute -inset-px rounded-2xl neon-ring"
+              aria-hidden
+            />
             <h2 className="text-xl font-semibold">
               <span className="neon-text">Meta Ads. Sales. Growth.</span>
             </h2>
             <p className="mt-3 text-sm text-white/70">
-              Performance-focused marketer with hands-on experience across offline & online sales,
-              lead generation, and paid social campaigns.
+              Performance-focused marketer with hands-on experience across
+              offline & online sales, lead generation, and paid social
+              campaigns.
             </p>
             <ul className="mt-4 space-y-2 text-white/80 text-sm">
               <li>• Campaign strategy & audience targeting</li>

@@ -3,7 +3,9 @@ import { useEffect } from "react";
 /** Adds `.reveal-visible` when elements with `.reveal` enter viewport */
 export function useRevealOnScroll() {
   useEffect(() => {
-    const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
+    const elements = Array.from(
+      document.querySelectorAll<HTMLElement>(".reveal"),
+    );
     if (!elements.length) return;
 
     const io = new IntersectionObserver(

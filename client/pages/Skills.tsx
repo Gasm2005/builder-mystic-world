@@ -40,8 +40,12 @@ export default function Skills() {
   return (
     <section className="container mx-auto py-16 lg:py-24">
       <header className="text-center max-w-2xl mx-auto mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold"><span className="neon-text">Skills</span></h1>
-        <p className="mt-3 text-white/70">A blend of sales rigor and performance marketing craft.</p>
+        <h1 className="text-3xl sm:text-4xl font-bold">
+          <span className="neon-text">Skills</span>
+        </h1>
+        <p className="mt-3 text-white/70">
+          A blend of sales rigor and performance marketing craft.
+        </p>
       </header>
 
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
