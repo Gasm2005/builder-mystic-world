@@ -32,8 +32,8 @@ const ROLES = [
   {
     title: "Data Entry",
     company: "Baba Engineering (L&T Project)",
-    location: "Uttar Pradesh",
-    duration: "2019 – 2020",
+    location: "Gonda, UP",
+    duration: "2019 – 2021",
     description:
       "Learned precision and process ownership while maintaining project data.",
     achievements: [
