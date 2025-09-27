@@ -4,8 +4,8 @@ const ROLES = [
   {
     title: "Senior Project Coordinator",
     company: "Zoopup Technologies",
-    location: "Remote",
-    duration: "2024 – Present",
+    location: "On-site",
+    duration: "Sep 2025 – Present",
     description:
       "Coordinating projects and connecting business professionals to the best freelancers for their needs.",
     achievements: [
