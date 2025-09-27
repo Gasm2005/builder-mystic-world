@@ -1,15 +1,39 @@
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll";
 
-const SKILLS = [
-  "Meta Ads Management",
-  "Online & Offline Sales",
-  "Lead Generation & Nurturing",
-  "Client Communication",
-  "Content Creation (Canva)",
-  "Resilience & Adaptability",
-  "Extreme Loyalty & Patience",
-  "Goal-Oriented Mindset",
-] as const;
+const SKILLS: { title: string; desc: string }[] = [
+  {
+    title: "Meta Ads Management",
+    desc: "Running and optimizing Meta (Facebook & Instagram) ad campaigns.",
+  },
+  {
+    title: "Online & Offline Sales",
+    desc: "Experience in credit card sales, telesales, and client-facing roles.",
+  },
+  {
+    title: "Lead Generation & Nurturing",
+    desc: "Finding potential clients and guiding them through the sales process.",
+  },
+  {
+    title: "Client Communication",
+    desc: "Handling clients professionally, building trust, and maintaining relationships.",
+  },
+  {
+    title: "Content Creation (Canva)",
+    desc: "Designing posts, creatives, and marketing materials for social media.",
+  },
+  {
+    title: "Resilience & Adaptability",
+    desc: "Thriving under pressure and in fast-paced environments.",
+  },
+  {
+    title: "Extreme Loyalty & Patience",
+    desc: "Dedication to work and long-term goals.",
+  },
+  {
+    title: "A Will to Deliver Results",
+    desc: "Strong focus on achieving outcomes and exceeding expectations.",
+  },
+];
 
 export default function Skills() {
   useRevealOnScroll();
@@ -22,12 +46,14 @@ export default function Skills() {
 
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
         {SKILLS.map((s) => (
-          <li key={s} className="reveal">
-            <div className="group relative rounded-full p-[2px] neon-bg">
-              <div className="rounded-full bg-[hsl(var(--background))] px-5 py-3 text-center text-white/80 transition-all duration-300 group-hover:text-white group-hover:shadow-[0_0_0_4px_rgba(0,0,0,0.2)] group-hover:-translate-y-0.5">
-                <span className="inline-block bg-clip-text text-transparent group-hover:text-white group-hover:[background-image:linear-gradient(135deg,var(--neon-start),var(--neon-end))]">
-                  {s}
-                </span>
+          <li key={s.title} className="reveal">
+            <div className="group relative rounded-2xl p-[2px] neon-bg">
+              <div className="rounded-2xl bg-[hsl(var(--background))] px-5 py-4 text-left transition-all duration-300 group-hover:shadow-[0_20px_60px_-20px_rgba(0,114,255,0.35)] group-hover:-translate-y-0.5">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-white font-medium">{s.title}</span>
+                  <span className="size-2 rounded-full neon-bg" aria-hidden />
+                </div>
+                <p className="mt-1.5 text-sm text-white/70">{s.desc}</p>
               </div>
             </div>
           </li>
