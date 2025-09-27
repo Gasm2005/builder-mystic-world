@@ -1,62 +1,68 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Particles from "@/components/Particles";
+import { Typewriter } from "@/components/Typewriter";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
+    <section aria-label="Hero" className="relative min-h-[calc(100dvh-64px)] flex items-center">
+      {/* Background media layer */}
+      <div
+        className="absolute inset-0 -z-10 bg-[url('https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"
+        role="img"
+        aria-label="Dark cinematic abstract background"
+      />
+
+      {/* Particles overlay */}
+      <Particles density={90} />
+
+      <div className="container relative mx-auto py-20 grid md:grid-cols-12 gap-8 items-center">
+        <div className="md:col-span-7">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+            <span className="neon-text">Ajay Pratap Pandey</span>
+          </h1>
+
+          <p className="mt-5 text-white/80 text-lg max-w-xl">
+            From the streets of Gonda to Meta Ads – this is how I built myself.
+          </p>
+
+          <p className="mt-6 text-white/70 text-base">
+            <Typewriter
+              items={["Digital Marketer", "Sales Expert", "Meta Ads Specialist"]}
             />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+          </p>
+
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <Link to="/about" className="btn-neon" aria-label="Explore my journey">
+              <span className="inner">Explore My Journey</span>
+            </Link>
+            <Link
+              to="/contact"
+              className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/80 hover:text-white hover:border-white/30 transition-colors"
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+
+        {/* Highlight card */}
+        <div className="md:col-span-5">
+          <div className="relative rounded-2xl p-6 border border-white/10 bg-white/5 backdrop-blur reveal">
+            <div className="absolute -inset-px rounded-2xl neon-ring" aria-hidden />
+            <h2 className="text-xl font-semibold">
+              <span className="neon-text">Meta Ads. Sales. Growth.</span>
+            </h2>
+            <p className="mt-3 text-sm text-white/70">
+              Performance-focused marketer with hands-on experience across offline & online sales,
+              lead generation, and paid social campaigns.
+            </p>
+            <ul className="mt-4 space-y-2 text-white/80 text-sm">
+              <li>• Campaign strategy & audience targeting</li>
+              <li>• Creative testing and analytics</li>
+              <li>• Client communication and reporting</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
