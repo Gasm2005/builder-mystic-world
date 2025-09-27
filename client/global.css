@@ -161,4 +161,10 @@
       radial-gradient(800px 500px at 60% 85%, rgba(0,114,255,0.12), transparent 60%),
       linear-gradient(180deg, #0f1115, #0f1115);
   }
+
+  /* Soft vignette for edge fading */
+  .vignette {
+    background: radial-gradient(1200px 500px at 50% 0%, transparent 30%, rgba(0,0,0,0.35) 100%);
+    pointer-events: none;
+  }
 }
