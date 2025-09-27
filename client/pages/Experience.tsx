@@ -19,7 +19,7 @@ const ROLES = [
     title: "Credit Card Sales",
     company: "Innovsource Ltd. (SBI)",
     location: "Gonda, UP",
-    duration: "2018 – 2019",
+    duration: "2018 ��� 2019",
     description:
       "Built ground-level sales discipline through door-to-door outreach and kiosk activations.",
     achievements: [
@@ -44,12 +44,12 @@ const ROLES = [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
   },
   {
-    title: "Corporate Sales",
+    title: "Customer Service | Telesales",
     company: "Tech Mahindra",
     location: "Noida",
-    duration: "2020 – 2021",
+    duration: "2021 – 2022",
     description:
-      "Handled corporate clients, cold calls, and opportunity qualification to build healthy pipelines.",
+      "Customer service and telesales; built trust over calls and qualified opportunities for the sales team.",
     achievements: [
       "Improved call-to-meeting ratio by 22%",
       "Standardized follow-up cadences for team adoption",
@@ -59,9 +59,9 @@ const ROLES = [
   },
   {
     title: "Digital Marketing & Sales",
-    company: "Pawpl & Royal Enfield",
-    location: "Gonda & Remote",
-    duration: "2021 – 2023",
+    company: "Pawpl Venture",
+    location: "Remote",
+    duration: "2023 – 2024",
     description:
       "Executed Meta Ads, content creation in Canva, and performance reporting for stakeholders.",
     achievements: [
@@ -72,12 +72,12 @@ const ROLES = [
       "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1600&auto=format&fit=crop",
   },
   {
-    title: "Digital Sales",
+    title: "IT Sales, Social Media Management | PPC",
     company: "Fuse Market",
     location: "Remote",
-    duration: "2023 – Present",
+    duration: "2024 – 2025",
     description:
-      "End-to-end client handling from discovery to conversion with performance-focused media plans.",
+      "IT sales outreach, social media management, and PPC execution for lead generation.",
     achievements: [
       "Delivered ROAS-positive test cycles within 30 days",
       "Built reporting dashboards for transparency",
