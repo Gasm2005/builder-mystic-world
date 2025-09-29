@@ -195,6 +195,21 @@
     @apply relative z-[1] rounded-full bg-[hsl(var(--card))] px-5 py-2.5 text-white/90;
   }
 
+  /* Slide interaction for tiles */
+  .tile-slide {
+    transform: translateX(6px);
+    transition: all 0.3s ease-in-out;
+    will-change: transform, box-shadow;
+  }
+  .tile-slide:hover {
+    transform: translateX(0) translateY(-8px);
+  }
+  .tile-slide:focus-visible {
+    transform: translateX(0) translateY(-8px);
+    outline: 2px solid color-mix(in oklab, var(--neon-end), white 20%);
+    outline-offset: 2px;
+  }
+
   /* Mesh gradient background for hero sections */
   .mesh-bg {
     background:
