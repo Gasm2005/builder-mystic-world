@@ -60,7 +60,7 @@ const ROLES = [
   {
     title: "Digital Marketing & Sales",
     company: "Pawpl Venture",
-    location: "Remote",
+    location: "On-site",
     duration: "2023 – 2024",
     description:
       "Executed Meta Ads, content creation in Canva, and performance reporting for stakeholders.",
@@ -74,7 +74,7 @@ const ROLES = [
   {
     title: "IT Sales, Social Media Management | PPC",
     company: "Fuse Market",
-    location: "Remote",
+    location: "On-site",
     duration: "2024 – 2025",
     description:
       "IT sales outreach, social media management, and PPC execution for lead generation.",
