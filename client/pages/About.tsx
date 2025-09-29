@@ -57,7 +57,7 @@ const TIMELINE = [
   },
   {
     title: "Senior Project Coordinator | Zoopup Technologies",
-    meta: "Project coordination & freelancer matching • On-site • Sep 2025 – Present",
+    meta: "Lucknow • Project coordination & freelancer matching • On-site • Sep 2025 – Present",
     desc: "Connecting business professionals to the best freelancers and coordinating delivery.",
     icon: "🤝",
     links: [],
