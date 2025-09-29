@@ -52,7 +52,7 @@ export default function Skills() {
         {SKILLS.map((s) => (
           <li key={s.title} className="reveal">
             <div className="group relative rounded-2xl p-[2px] neon-bg">
-              <div className="rounded-2xl bg-[hsl(var(--background))] px-5 py-4 text-left transition-all duration-300 group-hover:shadow-[0_20px_60px_-20px_rgba(0,114,255,0.35)] group-hover:-translate-y-0.5">
+              <div className="rounded-2xl bg-[hsl(var(--background))] px-5 py-4 text-left transition-all duration-300 group-hover:shadow-[0_20px_60px_-20px_rgba(0,114,255,0.35)] tile-slide">
                 <div className="flex items-center justify-between gap-3">
                   <span className="text-white font-medium">{s.title}</span>
                   <span className="size-2 rounded-full neon-bg" aria-hidden />
