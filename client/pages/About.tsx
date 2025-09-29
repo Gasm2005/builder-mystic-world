@@ -114,8 +114,7 @@ export default function About() {
               </span>
               <div
                 className={
-                  "grid gap-2 p-5 rounded-xl border border-white/10 bg-white/5 backdrop-blur " +
-                  (idx % 2 ? "md:ml-24" : "md:mr-24")
+                  "grid gap-2 p-5 rounded-xl border border-white/10 bg-white/5 backdrop-blur w-full md:ml-8"
                 }
               >
                 <h3 className="text-lg font-semibold text-white">
