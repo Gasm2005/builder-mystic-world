@@ -52,7 +52,7 @@ export default function Index() {
 
         {/* Highlight card */}
         <div className="md:col-span-5">
-          <div className="relative rounded-2xl p-6 border border-white/10 bg-white/5 backdrop-blur reveal">
+          <div className="relative rounded-2xl p-6 border border-white/10 bg-white/5 backdrop-blur reveal tile-slide">
             <div
               className="absolute -inset-px rounded-2xl neon-ring"
               aria-hidden
