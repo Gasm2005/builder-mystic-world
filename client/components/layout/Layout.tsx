@@ -93,7 +93,7 @@ function Footer() {
             Email
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/ajay-pratap-pandey-ba0a02204"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -102,13 +102,13 @@ function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://github.com/Gasm2005"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
-            aria-label="Instagram"
+            aria-label="GitHub"
           >
-            Instagram
+            GitHub
           </a>
         </div>
       </div>
