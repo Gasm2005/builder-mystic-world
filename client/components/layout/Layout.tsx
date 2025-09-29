@@ -25,7 +25,7 @@ function Header() {
         <Link to="/" className="font-semibold tracking-tight">
           <span className="neon-text text-lg">Ajay Pratap Pandey</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="flex flex-wrap items-center gap-1 overflow-x-auto md:overflow-visible">
           <NavLink
             to="/"
             className={({ isActive }) => cn(linkBase, isActive && "text-white")}
