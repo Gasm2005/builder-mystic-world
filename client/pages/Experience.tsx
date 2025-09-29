@@ -19,7 +19,7 @@ const ROLES = [
     title: "Credit Card Sales",
     company: "Innovsource Ltd. (SBI)",
     location: "Gonda, UP",
-    duration: "2018 ��� 2019",
+    duration: "2018 – 2019",
     description:
       "Built ground-level sales discipline through door-to-door outreach and kiosk activations.",
     achievements: [
@@ -87,6 +87,15 @@ const ROLES = [
   },
 ] as const;
 
+function parseStart(range: string): number {
+  const monthMap: Record<string, number> = { Jan:1, Feb:2, Mar:3, Apr:4, May:5, Jun:6, Jul:7, Aug:8, Sep:9, Oct:10, Nov:11, Dec:12 };
+  const m = range.match(/^(?:([A-Za-z]{3})\s+)?(\d{4})\s+[\u2013-]/);
+  if (!m) return 0;
+  const month = m[1] ? monthMap[m[1] as keyof typeof monthMap] : 1;
+  const year = parseInt(m[2], 10);
+  return year * 12 + month;
+}
+
 export default function Experience() {
   useRevealOnScroll();
   return (
@@ -99,7 +108,7 @@ export default function Experience() {
       </header>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {ROLES.map((r) => (
+        {[...ROLES].sort((a,b)=>parseStart(b.duration)-parseStart(a.duration)).map((r) => (
           <article
             key={r.title}
             className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur tile-slide hover:shadow-[0_20px_60px_-15px_rgba(0,114,255,0.35)]"
