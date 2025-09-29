@@ -102,7 +102,7 @@ export default function Experience() {
         {ROLES.map((r) => (
           <article
             key={r.title}
-            className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_rgba(0,114,255,0.35)]"
+            className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur tile-slide hover:shadow-[0_20px_60px_-15px_rgba(0,114,255,0.35)]"
           >
             <figure className="h-40 w-full overflow-hidden">
               <img
