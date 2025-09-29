@@ -55,6 +55,13 @@ const TIMELINE = [
     icon: "⚡",
     links: [],
   },
+  {
+    title: "Senior Project Coordinator | Zoopup Technologies",
+    meta: "Project coordination & freelancer matching • On-site • Sep 2025 – Present",
+    desc: "Connecting business professionals to the best freelancers and coordinating delivery.",
+    icon: "🤝",
+    links: [],
+  },
 ] as const;
 
 export default function About() {
