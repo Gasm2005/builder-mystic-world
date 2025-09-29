@@ -65,7 +65,7 @@ export default function Portfolio() {
             href={it.href}
             target={it.href.startsWith("http") ? "_blank" : undefined}
             rel={it.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur"
+            className="reveal group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur tile-slide"
             aria-label={it.title}
           >
             <figure className="h-44 w-full overflow-hidden">
