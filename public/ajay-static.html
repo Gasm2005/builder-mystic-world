@@ -457,7 +457,7 @@
                 </div>
               </a>
 
-              <a class="portfolio-card tile-slide" href="#">
+              <div class="portfolio-card tile-slide" aria-labelledby="case-study-title">
                 <figure>
                   <img
                     src="https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&amp;w=1600&amp;auto=format&amp;fit=crop"
@@ -471,9 +471,10 @@
                     <span class="dot" aria-hidden="true"></span>
                     Case Study
                   </span>
-                  <h3>Meta Ads Campaigns • Case Study</h3>
+                  <h3 id="case-study-title">Meta Ads Campaigns • Case Study</h3>
+                  <p class="note">Detailed breakdown available on request.</p>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </section>
@@ -497,8 +498,7 @@
       <footer class="site-footer">
         <div class="container footer-inner">
           <p>
-            © <span id="year"></span>
-            <span class="highlight">Ajay Pratap Pandey</span>. All rights reserved.
+            © 2025 <span class="highlight">Ajay Pratap Pandey</span>. All rights reserved.
           </p>
           <div class="footer-links">
             <a href="mailto:ajay@example.com">Email</a>
@@ -508,9 +508,5 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
